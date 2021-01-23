@@ -25,6 +25,9 @@ This Game class definitely will call 'Board' class
 class Game extends React.Component {
 //there are other codes
     return (
+    
+    
+    
         <div className="game">
             <div className="game-board">
                 <Board  // board class
@@ -37,6 +40,8 @@ class Game extends React.Component {
                 <ol>{moves}</ol>
             </div>
         </div>
+        
+        
     );
   
 };
