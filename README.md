@@ -7,13 +7,14 @@ when this web application is loaded, It will call 'Game' class first
 
 so here's the code to call 'Game'
 
-
-'''
+<pre>
+<code>
 ReactDOM.render(
     <Game />,
     document.getElementById('root')
 );
-'''
+</pre>
+</code>
 
  
 
