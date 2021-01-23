@@ -144,8 +144,9 @@ then you can see 'this.state.xIsNext ? 'X':'O'' this line then we have to go to 
         }
     }
     
-state is in constructor.React said that constructor is necessary to use 'state' so anyway
-There is 'xIsNext: true,' this code so if you compare this 2 lines
+state is in constructor.
+React said that constructor is necessary to use 'state' so anyway
+There is 'xIsNext: true,' this code so if you compare these 2 lines
 
 
         status = 'Next Player: '+(this.state.xIsNext ? 'X':'O');
