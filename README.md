@@ -24,22 +24,22 @@ This Game class definitely will call 'Board' class
 <code>
 class Game extends React.Component {
 //there are other codes
-        return (
-            <div className="game">
-                <div className="game-board">
-                    <Board  // board class
-                        squares = {current.squares}
-                        onClick={(i)=>this.handleClick(i)}
+    return (
+        <div className="game">
+            <div className="game-board">
+                <Board  // board class
+                    squares = {current.squares}
+                    onClick={(i)=>this.handleClick(i)}
                     />
-                </div>
-                <div className="game-info">
-                    <div>{status}</div>
-                    <ol>{moves}</ol>
-                </div>
             </div>
-        );
+            <div className="game-info">
+                <div>{status}</div>
+                <ol>{moves}</ol>
+            </div>
+        </div>
+    );
   
-  };
+};
 </code>
 </pre>
   
