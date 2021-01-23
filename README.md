@@ -13,8 +13,8 @@ ReactDOM.render(
     <Game />,
     document.getElementById('root')
 );
-</pre>
 </code>
+</pre>
 
  
 
