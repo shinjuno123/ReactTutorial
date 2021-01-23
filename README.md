@@ -6,6 +6,8 @@ so I started to draw the rendering process in my head
 when this web application is loaded, It will call 'Game' class first 
 
 so here's the code to call 'Game'
+
+
 '''
 ReactDOM.render(
     <Game />,
