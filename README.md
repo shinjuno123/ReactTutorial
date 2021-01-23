@@ -19,6 +19,7 @@ ReactDOM.render(
  
 
 This Game class definitely will call 'Board' class
+
 <pre>
 <code>
 class Game extends React.Component {
@@ -39,7 +40,7 @@ class Game extends React.Component {
         );
   
   };
- </code>
+</code>
 </pre>
   
 but besides that it will call 'status' variable and 'moves' variable too
