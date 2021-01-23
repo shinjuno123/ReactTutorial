@@ -24,11 +24,7 @@ This Game class definitely will call 'Board' class
 ***
 
     class Game extends React.Component {
-
         //there are other codes
-
-
-
         return (
     
             <div className="game">
