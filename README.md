@@ -178,12 +178,78 @@ Now we will follow the flows of variable 'moves'
         );
   
     };
+    
+    
+when 'moves' is called,this map method will begin next
 
+        const moves = history.map((step,move)=>{
+            const desc = move ?
+            'Go to move #'+move:
+            'Go to game start';
+            return(
+                <li key={move}>
+                    <button onClick={()=> this.jumpTo(move)}>{desc}</button>
+                </li>
+            );
 
+        });
+ in map method, you will see those 2 parameters 'step' and 'move'.
+ I thought that this javascript 'step' is like python parameter 'self' that I used to use and 
+ you can get the size? or Length? of array from 'move'.
+ if there is value of move,'desc' value would be 'Go to move #size of Array' or 'desc' value would be 'Go to game Start' 
+ and this map method returns jsx tags including a button tag.
+ 
+            return(
+                <li key={move}>
+                    <button onClick={()=> this.jumpTo(move)}>{desc}</button>
+                </li>
+            );
+as you can see, that {desc} will attach the Text I told you on the Buttons that would be made when this web application would render
 
+now we will see Board tag
 
+            <Board 
+                  squares = {current.squares}
+                  onClick={(i)=>this.handleClick(i)}
+             />
+In 'Game' class, There is this Board tag and It will call 'Board' class
+In react, You can use class or function like a tag.
 
+    class Board extends React.Component {
+        renderSquare(i) {
+            return (
+            <Square 
+                value={this.props.squares[i]}
+                onClick={()=>this.props.onClick(i)}
+            />
+            );
+        }
 
+        render() {
+     
+            return (
+                <div>
+                    <div className="board-row">
+                        {this.renderSquare(0)}
+                        {this.renderSquare(1)}
+                        {this.renderSquare(2)}
+                    </div>
+                    <div className="board-row">
+                        {this.renderSquare(3)}
+                        {this.renderSquare(4)}
+                        {this.renderSquare(5)}
+                    </div>
+                    <div className="board-row">
+                        {this.renderSquare(6)}
+                        {this.renderSquare(7)}
+                        {this.renderSquare(8)}
+                    </div>
+                </div>
+            );
+        }
+    }         
+
+So here You will see the 9 squares to be rendered
 
 
 
