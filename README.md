@@ -250,8 +250,31 @@ In react, You can use class or function like a tag.
     }         
 
 So here You will see the 9 squares to be rendered
+and then renderSquare method will be started after 'render' starts
+
+        renderSquare(i) {
+            return (
+            <Square 
+                value={this.props.squares[i]}
+                onClick={()=>this.props.onClick(i)}
+            />
+            );
+        }
+so this returns 'Square' class
+
+    class Square extends React.Component {
+        render() {
+            return (
+                <button className="square" onClick={()=> this.props.onClick()}>
+                    {this.props.value}
+                </button>
+            );
+        }
+    }
+then you will get to see 9 squares combined on the website application screen
 
 
+Let's look into 'props'
 
 
 
