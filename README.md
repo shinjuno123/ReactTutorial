@@ -14,12 +14,12 @@ so I'll organize functions what I learned when I completed the tutorial of React
 </pr>
 
 1. classes or functions work like a tag in jsx
-<code>
-    <Board 
-        squares = {current.squares}
-        onClick={(i)=>this.handleClick(i)}
-    /> 
-</code>    
+
+        <Board 
+            squares = {current.squares}
+            onClick={(i)=>this.handleClick(i)}
+        /> 
+  
 2. 'render' function is necessary
 
 3. If you want to make or use some variables, then Make 'constructor' and write 'state' variable in json form
