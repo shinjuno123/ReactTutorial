@@ -80,4 +80,7 @@ so I'll organize functions what I learned when I completed the tutorial of React
 </pr>
 
 
-  
+What I felt from this
+
+Redux Would be a good combination definitely because usually In a big project,the Project needs big and organized space in your flash memory before you insert your data to Database so I'll have to use
+React with Redux together
