@@ -15,12 +15,10 @@ so I'll organize functions what I learned when I completed the tutorial of React
 
 1. classes or functions work like a tag in jsx
 <pr>
-<code
     <Board 
         squares = {current.squares}
         onClick={(i)=>this.handleClick(i)}
-    />
-</code>    
+    /> 
 </pr>    
 2. 'render' function is necessary
 
