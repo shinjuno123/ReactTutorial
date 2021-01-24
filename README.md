@@ -7,9 +7,9 @@ so I'll organize functions what I learned when I completed the tutorial of React
 
 <pr>
 <code>    
-    class Game extends React.Component{
-    //code
-    }
+        class Game extends React.Component{
+        //code
+        }
 </code>    
 </pr>
 
@@ -75,7 +75,7 @@ so I'll organize functions what I learned when I completed the tutorial of React
 7. This is not about 'React.js' but It is good not to change the orginal data when you want to leave the records of the past of your web app
 <pr>
 <code>    
-    const history = this.state.history.slice(0,this.state.stepNumber+1);
+        const history = this.state.history.slice(0,this.state.stepNumber+1);
 </code>    
 </pr>
 
